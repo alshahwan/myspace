@@ -35,6 +35,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 93vh;
+  width: 100%;
 }
 
 #side_nav .menu .menu_item {
@@ -53,15 +54,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-right: 15px;
 }
 
 #side_nav .menu .menu_item .icon {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 #side_nav .menu .menu_item .list_text {
   margin-top: -5px;
-  font-size: 14px;
+  font-size: 12px;
+}
+
+#side_nav .menu .menu_item:hover {
+  border-right: 4px solid #20A4F3;
+  margin-right: -4px;
 }
 
 #side_nav .menu :hover {
@@ -69,28 +76,14 @@
 }
 
 #side_nav .signout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #ffffff;
   padding: 10px 15px;
   background-color: #20A4F3;
-  /*     border-radius: 12px 20px 12px 20px; */
+  text-decoration: none;
 }
 
 #side_nav .signout a {
   margin: 0px;
-  text-decoration: none;
 }
 
 #side_nav .signout i {

@@ -29,6 +29,7 @@ $popover-arrow-width: 0;
   justify-content: space-between;
   align-items: center;
   height: 93vh;
+  width: 100%;
   .menu {
     .menu_item {
       display: flex;
@@ -37,30 +38,30 @@ $popover-arrow-width: 0;
       align-items: center;
       margin: 15px auto;
       flex-direction: column;
+      padding-right: 15px;
       .icon {
-        font-size: 40px;
+        font-size: 35px;
       }
       .list_text{
         margin-top: -5px;
-        font-size: 14px;
+        font-size: 12px;
+      }
+      &:hover {
+        border-right: 4px solid $californiablue;
+        margin-right: -4px;
       }
     }
     :hover {
-    color: $californiablue
+    color: $californiablue;
     }
   }
   .signout {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     color: #ffffff;
     padding: 10px 15px;
     background-color: $californiablue;
-/*     border-radius: 12px 20px 12px 20px; */
+    text-decoration: none;
     a {
       margin: 0px;
-      text-decoration: none;
     }
     i {
       margin-right: 5px;
