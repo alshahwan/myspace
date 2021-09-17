@@ -1,3 +1,31 @@
+/* Pulse  */
+.pulse {
+  -webkit-animation: pulse-animation 2s infinite;
+          animation: pulse-animation 2s infinite;
+}
+
+@-webkit-keyframes pulse-animation {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px #00be00;
+            box-shadow: 0 0 0 0px #00be00;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
+            box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
+  }
+}
+
+@keyframes pulse-animation {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px #00be00;
+            box-shadow: 0 0 0 0px #00be00;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
+            box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
+  }
+}
+
 * {
   font-family: 'Open Sans', sans-serif;
 }
@@ -13,7 +41,7 @@
 }
 
 .upper_nav img {
-  margin: 10px 15px;
+  margin: 15px 15px;
 }
 
 #side_nav {
@@ -35,10 +63,15 @@
       -ms-flex-align: center;
           align-items: center;
   height: 93vh;
+}
+
+#side_nav .menu {
   width: 100%;
 }
 
 #side_nav .menu .menu_item {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +87,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 15px;
+  margin-right: 4px;
+  border-left: 4px solid transparent;
 }
 
 #side_nav .menu .menu_item .icon {
@@ -67,8 +101,7 @@
 }
 
 #side_nav .menu .menu_item:hover {
-  border-right: 4px solid #20A4F3;
-  margin-right: -4px;
+  border-left: 4px solid #20A4F3;
 }
 
 #side_nav .menu :hover {
@@ -100,6 +133,50 @@
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  background-color: green;
+}
+
+#side_profile .name_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#side_profile .name_bar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  margin: 10px;
+  border: 3px solid #2EC4B6;
+}
+
+#side_profile .name_bar h5 {
+  margin-top: 12px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#side_profile .name_bar .name_info .status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+#side_profile .name_bar .name_info .green {
+  background-color: #00be00;
+}
+
+#side_profile .name_bar .name_info .status_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#side_profile .name_bar .name_info .status_info p {
+  color: #00be00;
+  margin: 0px;
 }
 /*# sourceMappingURL=style.css.map */
