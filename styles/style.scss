@@ -1,4 +1,6 @@
 @import 'animation';
+@import 'searchform';
+
 $darkblue: #011627;
 $pinkred: #FF3366;
 $tiffanyblue: #2EC4B6;
@@ -41,7 +43,6 @@ $popover-arrow-width: 0;
       margin: 15px auto;
       flex-direction: column;
       margin-right: 4px;
-      border-left: 4px solid transparent;
       .icon {
         font-size: 35px;
       }
@@ -49,12 +50,9 @@ $popover-arrow-width: 0;
         margin-top: -5px;
         font-size: 12px;
       }
-      &:hover {
-        border-left: 4px solid $californiablue;
-      }
     }
     :hover {
-    color: $californiablue;
+    color: $pinkred;
     }
   }
   .signout {

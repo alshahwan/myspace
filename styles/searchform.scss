@@ -1,0 +1,31 @@
+.search_bar {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #search {
+    flex: 5;
+    width: 100%;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 22px;
+    border: 1px solid #000000;
+    border-right: none;
+  }
+  button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-left: none;
+    i {
+      color: white;
+    }
+  }
+}
