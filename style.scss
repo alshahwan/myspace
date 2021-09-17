@@ -23,14 +23,15 @@ $popover-arrow-width: 0;
         color: $gray;
         justify-content: center;
         align-items: center;
-        margin: 5px auto;
+        margin: 15px auto;
+        flex-direction: column;
+
         .icon {
-            font-size: 18px;
-            margin-bottom: -2px;
-            margin-right: 10px;
+            font-size: 40px;
         }
         .list_text{
-            font-size: 20px;
+          margin-top: -5px;
+          font-size: 14px;
         }
     }
     img {
