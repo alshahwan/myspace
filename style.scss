@@ -1,0 +1,51 @@
+$darkblue: #011627;
+$pinkred: #FF3366;
+$tiffanyblue: #2EC4B6;
+$background: #F6F7F8;
+$gray: #bebebe;
+$californiablue: #20A4F3;
+$popover-arrow-width: 0;
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+.cantainer {
+    display: flex;
+}
+#side_nav {
+    flex: 1;
+    text-align: center;
+    .logo {
+        width: 150px;
+    }
+    .menu_item {
+        display: flex;
+        color: $gray;
+        justify-content: center;
+        align-items: center;
+        margin: 5px auto;
+        .icon {
+            font-size: 18px;
+            margin-bottom: -2px;
+            margin-right: 10px;
+        }
+        .list_text{
+            font-size: 20px;
+        }
+    }
+    img {
+        margin-top: 15px;
+        margin-bottom: 150px;
+    }
+    :hover {
+        color: $californiablue;
+    }
+}
+
+#main {
+    flex : 6;
+}
+#side_profile {
+    flex: 2;
+    background-color: green;
+}
