@@ -48,8 +48,24 @@
   padding: 6px;
   margin-top: 8px;
   font-size: 22px;
-  border: 1px solid #000000;
-  border-right: none;
+  background-color: #FF3366;
+  border: none;
+}
+
+.search_bar ::-webkit-input-placeholder {
+  color: white;
+}
+
+.search_bar :-ms-input-placeholder {
+  color: white;
+}
+
+.search_bar ::-ms-input-placeholder {
+  color: white;
+}
+
+.search_bar ::placeholder {
+  color: white;
 }
 
 .search_bar button {
@@ -57,12 +73,10 @@
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
-  background: #ddd;
+  background: #FF3366;
   font-size: 22px;
   border: none;
   cursor: pointer;
-  border: 1px solid #000000;
-  border-left: none;
 }
 
 .search_bar button i {
@@ -184,7 +198,7 @@
   height: 50px;
   border-radius: 40%;
   margin: 10px;
-  border: 3px solid #2EC4B6;
+  border: 3px solid #FF3366;
 }
 
 #side_profile .name_bar h5 {
