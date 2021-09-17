@@ -7,46 +7,70 @@ $californiablue: #20A4F3;
 $popover-arrow-width: 0;
 
 * {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .cantainer {
-    display: flex;
+  display: flex;
+}
+.upper_nav {
+  .logo {
+    width: 150px;
+}
+  img {
+    margin: 10px 15px;
+}
 }
 #side_nav {
-    flex: 1;
-    text-align: center;
-    .logo {
-        width: 150px;
-    }
-    .menu_item {
-        display: flex;
-        color: $gray;
-        justify-content: center;
-        align-items: center;
-        margin: 15px auto;
-        flex-direction: column;
 
-        .icon {
-            font-size: 40px;
-        }
-        .list_text{
-          margin-top: -5px;
-          font-size: 14px;
-        }
-    }
-    img {
-        margin-top: 15px;
-        margin-bottom: 150px;
+  flex: 1;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 93vh;
+  .menu {
+    .menu_item {
+      display: flex;
+      color: $gray;
+      justify-content: center;
+      align-items: center;
+      margin: 15px auto;
+      flex-direction: column;
+      .icon {
+        font-size: 40px;
+      }
+      .list_text{
+        margin-top: -5px;
+        font-size: 14px;
+      }
     }
     :hover {
-        color: $californiablue;
+    color: $californiablue
     }
+  }
+  .signout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 10px 15px;
+    background-color: $californiablue;
+/*     border-radius: 12px 20px 12px 20px; */
+    a {
+      margin: 0px;
+      text-decoration: none;
+    }
+    i {
+      margin-right: 5px;
+    }
+  }
 }
-
 #main {
-    flex : 6;
+  flex : 10;
 }
 #side_profile {
-    flex: 2;
-    background-color: green;
+  flex: 2;
+  background-color: green;
 }
