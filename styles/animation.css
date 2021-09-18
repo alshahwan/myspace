@@ -6,23 +6,23 @@
 
 @-webkit-keyframes pulse-animation {
   0% {
-    -webkit-box-shadow: 0 0 0 0px #00be00;
-            box-shadow: 0 0 0 0px #00be00;
+    -webkit-box-shadow: 0 0 0 0px white;
+            box-shadow: 0 0 0 0px white;
   }
   100% {
-    -webkit-box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
-            box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
+    -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
   }
 }
 
 @keyframes pulse-animation {
   0% {
-    -webkit-box-shadow: 0 0 0 0px #00be00;
-            box-shadow: 0 0 0 0px #00be00;
+    -webkit-box-shadow: 0 0 0 0px white;
+            box-shadow: 0 0 0 0px white;
   }
   100% {
-    -webkit-box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
-            box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
+    -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
   }
 }
 /*# sourceMappingURL=animation.css.map */
