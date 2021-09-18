@@ -17,10 +17,12 @@ body {
   background-color: $lightgray !important;
 }
 .cantainer {
-  background-color: $lightgray;
   display: flex;
 }
 .upper_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .logo {
     width: 150px;
 }
@@ -29,7 +31,6 @@ body {
 }
 }
 #side_nav {
-
   flex: 1;
   display: flex;
   text-align: center;
