@@ -189,7 +189,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 15px auto;
-  border-left: 2px solid transparent;
+  padding: 10px 0;
+  border-right: 3px solid transparent;
 }
 
 #side_nav .menu .menu_item .icon {
@@ -210,11 +211,17 @@ body {
 }
 
 #side_nav .menu .menu_item:hover {
-  border-left: 2px solid #FF3366;
+  border-right: 3px solid #FF3366;
+  color: #FF3366;
 }
 
-#side_nav .menu :hover {
-  color: #FF3366;
+#side_nav .menu .active {
+  background-color: #FF3366;
+  color: #F6F7F8;
+}
+
+#side_nav .menu .active:hover {
+  color: #F6F7F8;
 }
 
 #side_nav .signout {
