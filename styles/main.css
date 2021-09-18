@@ -87,11 +87,17 @@
 }
 
 .greeting {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .greeting h3 {
+  font-size: 36px;
   font-weight: 600;
+  margin: 30px auto;
+}
+
+.greeting h3 span {
+  color: #FF3366;
 }
 /*# sourceMappingURL=main.css.map */
