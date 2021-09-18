@@ -10,11 +10,17 @@
     padding: 6px;
     margin-top: 8px;
     font-size: 22px;
-    background-color: #FF3366;
+    background-color: #ffffff;
     border: none;
+    border-radius: 10px 0 0 10px;
+    :focus {
+      border: none;
+    }
   }
   ::placeholder {
-    color: white;
+    color: #FF3366;
+    font-weight: 600;
+    padding-left: 10px;
   }
   button {
     float: right;

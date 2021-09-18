@@ -67,4 +67,13 @@
 .search_bar button i {
   color: white;
 }
-/*# sourceMappingURL=searchform.css.map */
+
+.greeting {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.greeting h3 {
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */

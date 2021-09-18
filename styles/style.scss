@@ -1,18 +1,23 @@
 @import 'animation';
-@import 'searchform';
+@import 'main';
 
 $darkblue: #011627;
 $pinkred: #FF3366;
 $tiffanyblue: #2EC4B6;
 $background: #F6F7F8;
-$gray: #bebebe;
+$gray: #b1b0b0;
+$lightgray: #ebebeb;
 $californiablue: #20A4F3;
 $popover-arrow-width: 0;
 
 * {
   font-family: 'Open Sans', sans-serif;
 }
+body {
+  background-color: $lightgray !important;
+}
 .cantainer {
+  background-color: $lightgray;
   display: flex;
 }
 .upper_nav {
