@@ -18,7 +18,7 @@ document.querySelectorAll(".menu_item").forEach((item) => {
 //Selectors
 const title = document.querySelector(".greeting h3");
 const desc = document.querySelector(".greeting p");
-const randomNum = Math.floor(Math.random() * (13 - 0) + 0);
+const randomNum = Math.floor(Math.random() * (15 - 0));
 
 fetch("./json/hello.json")
   .then(response => response.json())
