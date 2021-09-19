@@ -6,6 +6,7 @@
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
+  text-align: right;
 }
 
 .input-search {
@@ -95,9 +96,15 @@
   font-size: 36px;
   font-weight: 600;
   margin: 30px auto;
+  margin-bottom: 10px;
 }
 
 .greeting h3 span {
   color: #FF3366;
+}
+
+.greeting p {
+  color: #767676;
+  margin-top: 0;
 }
 /*# sourceMappingURL=main.css.map */

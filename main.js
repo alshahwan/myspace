@@ -12,3 +12,17 @@ document.querySelectorAll(".menu_item").forEach((item) => {
     item.classList.add("active")
   });
 });
+
+
+// Random Language greeting
+//Selectors
+const title = document.querySelector(".greeting h3");
+const desc = document.querySelector(".greeting p");
+const randomNum = Math.floor(Math.random() * (13 - 0) + 0);
+
+fetch("./json/hello.json")
+  .then(response => response.json())
+  .then((data) => {
+    title.innerHTML = `${data.hello[randomNum].word}, <span>Elon!</span>`;
+    desc.innerHTML = `Now you know how to greet in ${data.hello[randomNum].lang}!`;
+  });

@@ -1,0 +1,18 @@
+{
+"hello":[
+  {"word":"Salut", "lang":"French"},
+  {"word":"Hola", "lang":"Spanish"},
+  {"word":"Privet", "lang":"Russian"},
+  {"word":"Nǐ hǎo", "lang":"Chinese"},
+  {"word":"Ciao", "lang":"Italian"},
+  {"word":"Yā, Yō", "lang":"Japanese"},
+  {"word":"Hallo", "lang":"German"},
+  {"word":"Oi", "lang":"Portuguese"},
+  {"word":"Anyoung", "lang":"Korean"},
+  {"word":"Asalaam alaikum", "lang":"Arabic"},
+  {"word":"Hoi", "lang":"Dutch"},
+  {"word":"Hej", "lang":"Danish and Swedish"},
+  {"word":"Yassou", "lang":"Greek"},
+  {"word":"Selam", "lang":"Turkish"}
+]
+}

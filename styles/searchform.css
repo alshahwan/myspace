@@ -6,6 +6,7 @@
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
+  text-align: right;
 }
 
 .input-search {

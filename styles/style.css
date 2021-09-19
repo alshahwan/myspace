@@ -6,23 +6,23 @@
 
 @-webkit-keyframes pulse-animation {
   0% {
-    -webkit-box-shadow: 0 0 0 0px white;
-            box-shadow: 0 0 0 0px white;
+    -webkit-box-shadow: 0 0 0 0px #00be00;
+            box-shadow: 0 0 0 0px #00be00;
   }
   100% {
-    -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
-            box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
+            box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
   }
 }
 
 @keyframes pulse-animation {
   0% {
-    -webkit-box-shadow: 0 0 0 0px white;
-            box-shadow: 0 0 0 0px white;
+    -webkit-box-shadow: 0 0 0 0px #00be00;
+            box-shadow: 0 0 0 0px #00be00;
   }
   100% {
-    -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
-            box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
+            box-shadow: 0 0 0 5px rgba(0, 190, 0, 0);
   }
 }
 
@@ -34,6 +34,7 @@
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
+  text-align: right;
 }
 
 .input-search {
@@ -123,10 +124,16 @@
   font-size: 36px;
   font-weight: 600;
   margin: 30px auto;
+  margin-bottom: 10px;
 }
 
 .greeting h3 span {
   color: #FF3366;
+}
+
+.greeting p {
+  color: #767676;
+  margin-top: 0;
 }
 
 * {
@@ -163,7 +170,6 @@ body {
           align-items: center;
   height: 100vh;
   background-color: white;
-  border-radius: 0 15px 15px 0;
 }
 
 #side_nav .logo {
@@ -188,7 +194,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px auto;
+  margin: 10px auto;
   padding: 10px 0;
   border-right: 3px solid transparent;
 }
@@ -264,8 +270,10 @@ body {
   height: fit-content;
   padding: 0px;
   padding-right: 14px;
-  border-radius: 15px;
-  background-color: #FF3366;
+  background-color: #ffffff;
+  border-radius: 0;
+  border-left: 3px solid #FF3366;
+  margin: 30px auto;
 }
 
 #side_profile .name_bar img {
@@ -273,7 +281,7 @@ body {
   height: 50px;
   border-radius: 40%;
   margin: 10px;
-  border: 3px solid #FF3366;
+  margin-right: 20px;
 }
 
 #side_profile .name_bar h5 {
@@ -290,7 +298,7 @@ body {
 }
 
 #side_profile .name_bar .name_info .green {
-  background-color: #ffffff;
+  background-color: #00be00;
 }
 
 #side_profile .name_bar .name_info .status_info {
@@ -300,10 +308,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 5px;
+  padding-right: 15px;
+  margin-left: -5px;
+  margin-right: -15px;
+  border-radius: 5px 0 0 5px;
 }
 
 #side_profile .name_bar .name_info .status_info p {
-  color: #ffffff;
+  color: #00be00;
   margin: 0px;
 }
 /*# sourceMappingURL=style.css.map */
