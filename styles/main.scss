@@ -42,3 +42,48 @@
     }
   }
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  .card {
+    height: 200px;
+    border-radius: 0;
+    padding: 10px;
+  }
+  .weather {
+    width: 400px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('https://source.unsplash.com/-TMTjIV0Vp0/400x200');
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 100%;
+      h2 {
+        font-size: 60px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 14px;
+      }
+      h6 {
+        font-size: 12px;
+      }
+    }
+    img {
+      width: 150px;
+    }
+
+  }
+}

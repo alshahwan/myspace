@@ -168,6 +168,83 @@
   margin-right: 30px;
 }
 
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards .card {
+  height: 200px;
+  border-radius: 0;
+  padding: 10px;
+}
+
+.cards .weather {
+  width: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("https://source.unsplash.com/-TMTjIV0Vp0/400x200");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://source.unsplash.com/-TMTjIV0Vp0/400x200");
+  background-size: cover;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cards .weather .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+}
+
+.cards .weather .text h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.cards .weather .text p {
+  font-size: 14px;
+}
+
+.cards .weather .text h6 {
+  font-size: 12px;
+}
+
+.cards .weather img {
+  width: 150px;
+}
+
 * {
   font-family: 'Open Sans', sans-serif;
 }
