@@ -4,19 +4,11 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 })
 
-// Selectors
-const LeftMenuItems = document.querySelectorAll(".menu_item");
-const ActiveListItem = document.querySelector(".active");
 
-// Functions
-function ChangeActiveListItem(item) {
-  ActiveListItem.classList.remove("active");
-  item.classList.add("active");
-};
-
-// Listeners and Executors
-LeftMenuItems.forEach((item) => {
+// Sidenav selection
+document.querySelectorAll(".menu_item").forEach((item) => {
   item.addEventListener("click", (event) => {
-    ChangeActiveListItem(item);
+    document.querySelector(".active").classList.remove("active");
+    item.classList.add("active")
   });
 });
