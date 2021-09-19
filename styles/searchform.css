@@ -1,4 +1,9 @@
-.search-box {
+.search_container {
+  width: 90%;
+  margin: 25px auto;
+}
+
+.search_container .search-box {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -6,10 +11,9 @@
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
-  text-align: right;
 }
 
-.input-search {
+.search_container .search-box .input-search {
   height: 40px;
   width: 40px;
   background-color: transparent;
@@ -25,35 +29,35 @@
   color: #20A4F3;
 }
 
-.input-search::-webkit-input-placeholder {
+.search_container .search-box .input-search::-webkit-input-placeholder {
   color: #20A4F3;
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: 100;
 }
 
-.input-search:-ms-input-placeholder {
+.search_container .search-box .input-search:-ms-input-placeholder {
   color: #20A4F3;
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: 100;
 }
 
-.input-search::-ms-input-placeholder {
+.search_container .search-box .input-search::-ms-input-placeholder {
   color: #20A4F3;
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: 100;
 }
 
-.input-search::placeholder {
+.search_container .search-box .input-search::placeholder {
   color: #20A4F3;
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: 100;
 }
 
-.btn-search {
+.search_container .search-box .btn-search {
   width: 50px;
   height: 40px;
   border-style: none;
@@ -69,7 +73,7 @@
   pointer-events: painted;
 }
 
-.btn-search:focus ~ .input-search {
+.search_container .search-box .btn-search:focus ~ .input-search {
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
@@ -78,7 +82,7 @@
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 
-.input-search:focus {
+.search_container .search-box .input-search:focus {
   width: 300px;
   border-radius: 0px;
   background-color: transparent;

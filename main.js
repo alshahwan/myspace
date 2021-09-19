@@ -39,7 +39,8 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   fetch("https://api.openweathermap.org/data/2.5/weather?q=dresden&appid=a5eb60179a70c40fd856da18298e2686&units=metric")
       .then(response => response.json())
       .then((data) => {
-        temp.innerHTML = `${data.main.temp}°`
-        high_min.innerHTML = `Max: ${data.main.temp_max}°, Min: ${data.main.temp_min}°`
+        temp.innerHTML = `${data.main.temp.toFixed(1)}°`
+        high_min.innerHTML = `Max: ${data.main.temp_max.toFixed(1)}°, Min: ${data.main.temp_min.toFixed(1)}°, ${data.weather[0].description}`
         img.src = `./img/weather/${data.weather[0].icon}.png`
+        img.alt = data.weather[0].description
       });

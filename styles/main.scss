@@ -32,7 +32,7 @@
       }
     }
     .pink {
-      background-color: #2EC4B6;
+      background-color: #20A4F3;
     }
     .gray {
       background-color: #FF3366;
@@ -49,7 +49,7 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 0 auto;
+  margin: 30px auto;
   .card {
     height: 200px;
     border-radius: 0;
@@ -57,13 +57,14 @@
   }
   .weather {
     width: 400px;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('https://source.unsplash.com/-TMTjIV0Vp0/400x200');
+    background-color: #ffffff;
     background-size: cover;
-    color: #ffffff;
+    color: #000000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    border: 3px solid #2EC4B6;
     .text {
       display: flex;
       flex-direction: column;
@@ -71,18 +72,22 @@
       align-items: flex-start;
       height: 100%;
       h2 {
-        font-size: 60px;
-        font-weight: 600;
+        font-size: 70px;
+        font-weight: 800;
+        color: #2EC4B6;
       }
       p {
         font-size: 14px;
       }
       h6 {
-        font-size: 12px;
+        font-size: 18px;
       }
     }
     img {
-      width: 150px;
+      width: 200px;
+      margin-left: 250px;
+      margin-bottom: 150px;
+      position: absolute;
     }
 
   }

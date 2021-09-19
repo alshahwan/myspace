@@ -26,7 +26,12 @@
   }
 }
 
-.search-box {
+.search_container {
+  width: 90%;
+  margin: 25px auto;
+}
+
+.search_container .search-box {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -34,10 +39,9 @@
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
-  text-align: right;
 }
 
-.input-search {
+.search_container .search-box .input-search {
   height: 40px;
   width: 40px;
   background-color: transparent;
@@ -53,35 +57,35 @@
   color: #20A4F3;
 }
 
-.input-search::-webkit-input-placeholder {
+.search_container .search-box .input-search::-webkit-input-placeholder {
   color: #20A4F3;
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: 100;
 }
 
-.input-search:-ms-input-placeholder {
+.search_container .search-box .input-search:-ms-input-placeholder {
   color: #20A4F3;
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: 100;
 }
 
-.input-search::-ms-input-placeholder {
+.search_container .search-box .input-search::-ms-input-placeholder {
   color: #20A4F3;
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: 100;
 }
 
-.input-search::placeholder {
+.search_container .search-box .input-search::placeholder {
   color: #20A4F3;
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: 100;
 }
 
-.btn-search {
+.search_container .search-box .btn-search {
   width: 50px;
   height: 40px;
   border-style: none;
@@ -97,7 +101,7 @@
   pointer-events: painted;
 }
 
-.btn-search:focus ~ .input-search {
+.search_container .search-box .btn-search:focus ~ .input-search {
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
@@ -106,7 +110,7 @@
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 
-.input-search:focus {
+.search_container .search-box .input-search:focus {
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
@@ -157,7 +161,7 @@
 }
 
 .welcome_bar .welcome_buttons .pink {
-  background-color: #2EC4B6;
+  background-color: #20A4F3;
 }
 
 .welcome_bar .welcome_buttons .gray {
@@ -181,7 +185,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .cards .card {
@@ -192,10 +196,9 @@
 
 .cards .weather {
   width: 400px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("https://source.unsplash.com/-TMTjIV0Vp0/400x200");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://source.unsplash.com/-TMTjIV0Vp0/400x200");
+  background-color: #ffffff;
   background-size: cover;
-  color: #ffffff;
+  color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,6 +212,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border: 3px solid #2EC4B6;
 }
 
 .cards .weather .text {
@@ -229,8 +233,9 @@
 }
 
 .cards .weather .text h2 {
-  font-size: 60px;
-  font-weight: 600;
+  font-size: 70px;
+  font-weight: 800;
+  color: #2EC4B6;
 }
 
 .cards .weather .text p {
@@ -238,11 +243,14 @@
 }
 
 .cards .weather .text h6 {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .cards .weather img {
-  width: 150px;
+  width: 200px;
+  margin-left: 250px;
+  margin-bottom: 150px;
+  position: absolute;
 }
 
 * {
